@@ -1,0 +1,38 @@
+LAUNCH
+To launch this application you can user command: java -jar hulkSmash.jar
+I recommend to launch this game in some linux console, I was manage to add some colors in app but it work only on linux console.
+
+INTERACTING
+When you see text like "[a] - aaaa", its mean that to choose option aaaa you have to write to console "a" and accept it by enter.
+All command have to by accepted with "Enter" key.
+
+In game you can move using command:
+w - to move up
+s - to move down
+d - to move right
+a - to move left.
+and using command:
+smash - you can attack enemy
+and:
+q - to exit game, after that you can save this game which you just ended.
+
+On map:
+you are a green rectangle with "0" symbol,
+blue space that surrounds you, is fog of war, you can reveal it to find enemy to smash by moving you champion,
+enemies are red rectangle with "8" symbol,
+obstacles are white rectangle.
+
+You can not go through or destroy obstacle.
+
+You can damage enemy only when you are next to him in one of four directions(top, bottom, left, right). Actually it
+depend on skill which you use. But smash works as I described.
+
+EXTEND
+I have implemented one fighting system, but application is prepare for other. To do that you have to crate class that
+extend FightSystem and pass it to Game constructor.
+
+I have implemented one skill, but application is prepare for other. To do that you have to crate class that extend
+AbstractSkill, add some code to FightAction and SkillFactory classes to handle new skills.
+
+
+I used IntelliJ to crate this application.
